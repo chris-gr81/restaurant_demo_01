@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#herosection {
+  display: flex;
+  height: 100vh;
+  background-image: url("./img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.herotitle {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.herosubtitle {
+  color: rgb(210, 210, 210);
+}
