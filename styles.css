@@ -8,6 +8,8 @@ body {
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
   font-style: normal;
+  background-color: #1a1a1a;
+  color: #fff;
 }
 
 #herosection {
@@ -16,42 +18,42 @@ body {
   background-image: url("./img/hero.jpg");
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #000000b2;
   background-blend-mode: multiply;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.herotitle {
+.title {
   font-family: "lobster", serif;
   font-weight: 400;
   font-size: 3rem;
   line-height: 3rem;
   font-weight: bold;
   font-style: normal;
-  text-align: center;
-  color: rgb(255, 255, 255);
+
   margin-bottom: 1rem;
 }
 
-.herosubtitle {
-  color: rgb(221, 221, 221);
+.subtitle {
+  color: #ddd;
 }
 
 .herolink {
-  background-color: rgb(255, 48, 48);
-  color: rgb(221, 221, 221);
+  background-color: #ff3030;
+  color: #ddd;
   width: fit-content;
   padding: 1rem 2rem;
   text-decoration: none;
   text-align: center;
   margin-top: 4rem;
-  border: 1px solid rgb(255, 48, 48);
+  border: 1px solid #ff3030;
 }
 
 .herolink:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: rgb(255, 48, 48);
+  background-color: #00000019;
+  color: #ff3030;
   transition: background-color 0.2s, color 0.2s;
 }
