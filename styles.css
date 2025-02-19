@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+body {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
 #herosection {
   display: flex;
   height: 100vh;
@@ -17,6 +23,9 @@
 }
 
 .herotitle {
+  font-family: "lobster", serif;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
   color: rgb(255, 255, 255);
 }
