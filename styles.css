@@ -4,11 +4,12 @@
 }
 
 body {
-  font-family: "Inter", serif;
+  font-family: "Inter", cursive;
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
   font-style: normal;
 }
+
 #herosection {
   display: flex;
   height: 100vh;
@@ -25,11 +26,32 @@ body {
 .herotitle {
   font-family: "lobster", serif;
   font-weight: 400;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: bold;
   font-style: normal;
   text-align: center;
   color: rgb(255, 255, 255);
+  margin-bottom: 1rem;
 }
 
 .herosubtitle {
-  color: rgb(210, 210, 210);
+  color: rgb(221, 221, 221);
+}
+
+.herolink {
+  background-color: rgb(255, 48, 48);
+  color: rgb(221, 221, 221);
+  width: fit-content;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 4rem;
+  border: 1px solid rgb(255, 48, 48);
+}
+
+.herolink:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgb(255, 48, 48);
+  transition: background-color 0.2s, color 0.2s;
 }
