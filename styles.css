@@ -9,7 +9,6 @@
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  /* font-weight: <weight>; */
   font-style: normal;
   background-color: #1a1a1a;
   color: #fff;
@@ -36,7 +35,6 @@ body {
   line-height: 3rem;
   font-weight: bold;
   font-style: normal;
-
   margin-bottom: 1rem;
 }
 
@@ -46,7 +44,7 @@ body {
 
 .herolink {
   background-color: #ff3030;
-  color: #ddd;
+  color: #fff;
   width: fit-content;
   padding: 1rem 2rem;
   text-decoration: none;
@@ -56,7 +54,7 @@ body {
 }
 
 .herolink:hover {
-  background-color: #00000019;
+  background-color: transparent;
   color: #ff3030;
   transition: background-color 0.2s, color 0.2s;
 }
