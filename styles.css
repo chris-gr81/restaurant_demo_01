@@ -18,6 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 1rem;
   height: 5rem;
   gap: 1rem;
   font-size: 0.8rem;
@@ -92,8 +93,17 @@ body {
   .subtitle {
     font-size: 1.5rem;
   }
+
   .herolink {
     padding: 1.2rem 2.5rem;
+  }
+
+  #topnav {
+    gap: 2rem;
+  }
+
+  .topnavitem {
+    font-size: 1rem;
   }
 }
 
@@ -102,5 +112,9 @@ body {
   .title {
     font-size: 6rem;
     line-height: 6.5rem;
+  }
+
+  #topnav {
+    gap: 4rem;
   }
 }
