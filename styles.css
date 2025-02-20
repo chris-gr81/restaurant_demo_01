@@ -17,16 +17,20 @@ body {
 #herosection {
   display: flex;
   height: 100vh;
-  background-image: url("./img/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no repeat;
-  background-color: #000000b2;
-  background-blend-mode: multiply;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url("./img/hero.jpg"); /*comment out for alternativ solution*/
+  background-color: #000000b2; /*..., too*/
+  background-blend-mode: multiply; /*..., too*/
+  /*
+    alternativ solution:
+    background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7),url(./img/hero.jpg);
+  */
 }
 
 .title {
@@ -58,4 +62,28 @@ body {
   background-color: transparent;
   color: #ff3030;
   transition: background-color 0.2s, color 0.2s;
+}
+
+/* MEDIA QUERIES */
+/* Tablets */
+@media screen and (min-width: 600px) {
+  .title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .herolink {
+    padding: 1.2rem 2.5rem;
+  }
+}
+
+/* Normal Computer */
+@media screen and (min-width: 1000px) {
+  .title {
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
 }
