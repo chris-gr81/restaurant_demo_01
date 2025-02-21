@@ -14,6 +14,7 @@ body {
   color: #fff;
 
   --primary-color: #ff3030;
+  --secondary-text-color: #ddd;
 }
 
 .abutton {
@@ -81,17 +82,35 @@ body {
 }
 
 .subtitle {
-  color: #ddd;
+  color: var(--secondary-text-color);
 }
 
 .hero-link {
   margin-top: 4rem;
 }
 .container-doublesplit {
+  display: grid;
+  gap: 2rem;
+  max-width: 85%;
+  margin: 0 auto;
 }
 .about-text {
+  display: flex;
+  flex-direction: column;
+}
+.about-text h2 {
+  margin: 2rem 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  width: fit-content;
+  border-bottom: 1px solid var(--primary-color);
+}
+.about-text p {
+  color: var(--secondary-text-color);
+  font-size: 0.9rem;
 }
 .about-link {
+  margin: 2rem 0 1rem 0;
 }
 
 /* MEDIA QUERIES */
