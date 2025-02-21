@@ -8,7 +8,7 @@
   </head>
   <body>
     <nav class="topnav">
-      <a href="#" class="topnavitem">Über uns</a>
+      <a href="#about" class="topnavitem">Über uns</a>
       <a href="#" class="topnavitem">Speise<wbr />karte</a>
       <a href="#" class="topnavitem">Öffnungs<wbr />zeiten</a>
     </nav>
@@ -21,8 +21,8 @@
         <p class="subtitle">Original italienische Küche aus der Toskana</p>
         <a class="abutton hero-link" href="#">Öffnungszeiten ansehen</a>
       </section>
-      <section class="container-doublesplit">
-        <section class="about-text">
+      <section id="about" class="container-doublesplit">
+        <div class="about-text">
           <h2>Über uns</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
@@ -37,9 +37,28 @@
             eaque non aliquid?
           </p>
           <a class="abutton about-link" href="#">Zur Speisekarte</a>
-        </section>
-        <section class="about-pics"></section>
+        </div>
+        <div class="about-pics">
+          <img
+            class="about-pics about-pics-single"
+            src="./img/about-1.jpg"
+            alt="a restaurant window"
+          />
+          <div class="about-pics-double">
+            <img
+              class="about-pics"
+              src="./img/about-2.jpg"
+              alt="a restaurant window"
+            />
+            <img
+              class="about-pics"
+              src="./img/about-3.jpg"
+              alt="a restaurant window"
+            />
+          </div>
+        </div>
       </section>
     </main>
+    <div id="placeholder " style="height: 900px"></div>
   </body>
 </html>
