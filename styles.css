@@ -12,9 +12,27 @@ body {
   font-style: normal;
   background-color: #1a1a1a;
   color: #fff;
+
+  --primary-color: #ff3030;
 }
 
-#topnav {
+.abutton {
+  background-color: var(--primary-color);
+  color: #fff;
+  width: fit-content;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.abutton:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.topnav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,13 +48,14 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-}
-.topnavitem:hover {
-  color: #ff3030;
-  transition: color 0.2s;
+  transition: color 0.2s ease-in-out;
 }
 
-#herosection {
+.topnavitem:hover {
+  color: var(--primary-color);
+}
+
+.herosection {
   display: flex;
   height: calc(100vh - 5rem);
 
@@ -65,26 +84,24 @@ body {
   color: #ddd;
 }
 
-.herolink {
-  background-color: #ff3030;
-  color: #fff;
-  width: fit-content;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  text-align: center;
+.hero-link {
   margin-top: 4rem;
-  border: 1px solid #ff3030;
 }
-
-.herolink:hover {
-  background-color: transparent;
-  color: #ff3030;
-  transition: background-color 0.2s, color 0.2s;
+.container-doublesplit {
+}
+.about-text {
+}
+.about-link {
 }
 
 /* MEDIA QUERIES */
 /* Tablets */
 @media screen and (min-width: 600px) {
+  .topnav {
+    gap: 2rem;
+    font-size: 1rem;
+  }
+
   .title {
     font-size: 4rem;
     line-height: 4rem;
@@ -97,24 +114,15 @@ body {
   .herolink {
     padding: 1.2rem 2.5rem;
   }
-
-  #topnav {
-    gap: 2rem;
-  }
-
-  .topnavitem {
-    font-size: 1rem;
-  }
 }
 
 /* Normal Computer */
 @media screen and (min-width: 1000px) {
+  .topnav {
+    gap: 4rem;
+  }
   .title {
     font-size: 6rem;
     line-height: 6.5rem;
-  }
-
-  #topnav {
-    gap: 4rem;
   }
 }
