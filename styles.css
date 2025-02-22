@@ -209,11 +209,11 @@ body {
   object-fit: cover;
 }
 
-.contact-data > h2 {
+.contact-data > .header2 {
   margin: 0 0 1rem 0;
 }
 
-.contact-data > p {
+.adress {
   margin-top: 0.5rem;
   color: var(--secondary-text-color);
 }
@@ -274,7 +274,7 @@ body {
   .herolink {
     padding: 1.2rem 2.5rem;
   }
-  .about-text > p {
+  .weare {
     font-size: 1rem;
   }
 
@@ -347,7 +347,7 @@ body {
     margin-bottom: 2rem;
   }
 
-  .contact-data > p {
+  .adress {
     margin-top: 1rem;
     font-size: 1.2rem;
   }
