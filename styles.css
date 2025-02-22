@@ -21,7 +21,13 @@ body {
   color: var(--primary-text-color);
 }
 
-.abutton {
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.abutton-positiv,
+.abutton-negativ {
   display: inline-block;
   padding: 1rem 2rem;
   text-align: center;
@@ -45,6 +51,7 @@ body {
   background-color: transparent;
   color: var(--primary-color);
 }
+
 .abutton-negativ:hover {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
@@ -115,10 +122,6 @@ body {
   margin-top: 4rem;
 }
 
-.container {
-  max-width: 85%;
-  margin: 0 auto;
-}
 .about {
   display: grid;
   gap: 2rem;
@@ -226,7 +229,8 @@ body {
 /* MEDIA QUERIES ------------------------------------- */
 /* Tablets */
 @media screen and (min-width: 600px) {
-  .abutton {
+  .abutton-positiv,
+  .abutton-negativ {
     padding: 1.2rem 2.5rem;
   }
   .topnav {
