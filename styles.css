@@ -145,21 +145,26 @@ body {
   gap: 0.5rem;
 }
 
-.openhours {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+.openhours-wrapper {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(./img/info.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 2rem 0 2rem 0;
-  margin: 3rem 0 3rem 0;
+  margin: 3rem 0;
+  padding: 2rem 0;
 }
 
-.openhours > .header2 {
+.openhours-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+.openhours-content > .header2 {
   margin: 0 0 1rem 0;
 }
 
@@ -197,6 +202,10 @@ body {
   .about-text > p {
     font-size: 1rem;
   }
+
+  .openhours {
+    margin: 4rem 0;
+  }
 }
 
 /* Normal Computer */
@@ -224,6 +233,19 @@ body {
   .about-pics,
   .about-pics-double {
     gap: 1rem;
+  }
+  .openhours-wrapper {
+    margin: 8rem 0;
+    padding: 6rem 0;
+  }
+  -content > .header2 {
+    margin-bottom: 2rem;
+  }
+
+  .opening-row {
+    width: 20rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
   }
 }
 
