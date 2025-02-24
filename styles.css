@@ -11,6 +11,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   --primary-color: #ff3030;
   --primary-text-color: #fff;
@@ -26,8 +27,8 @@ body {
   margin: 0 auto;
 }
 
-.abutton-positiv,
-.abutton-negativ {
+.button-positiv,
+.button-negativ {
   display: inline-block;
   padding: 1rem 2rem;
   text-align: center;
@@ -37,32 +38,33 @@ body {
   width: fit-content;
 }
 
-.abutton-positiv {
+.button-positiv {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
 }
 
-.abutton-positiv:hover {
+.button-positiv:hover {
   background-color: transparent;
   color: var(--primary-color);
 }
 
-.abutton-negativ {
+.button-negativ {
   background-color: transparent;
   color: var(--primary-color);
 }
 
-.abutton-negativ:hover {
+.button-negativ:hover {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
 }
 
-.header2 {
+.main-header {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   width: fit-content;
   border-bottom: 1px solid var(--primary-color);
 }
+
 .navigation,
 .navigation-foot {
   display: flex;
@@ -75,7 +77,7 @@ body {
   text-align: center;
 }
 
-.navigationitem {
+.navigation-item {
   color: var(--primary-text-color);
   text-decoration: none;
   text-transform: uppercase;
@@ -83,12 +85,13 @@ body {
   transition: color 0.2s ease-in-out;
 }
 
-.navigationitem:hover {
+.navigation-item:hover {
   color: var(--primary-color);
 }
+
 /* SPECIFIC STYLES ---------------------------------- */
 
-.herosection {
+.hero-section {
   display: flex;
   height: calc(100vh - 5rem);
 
@@ -131,11 +134,11 @@ body {
   flex-direction: column;
 }
 
-.about-text > .header2 {
+.about-text .main-header {
   margin: 2rem 0 1rem 0;
 }
 
-.about-text > p {
+.we-are {
   color: var(--secondary-text-color);
   font-size: 0.9rem;
 }
@@ -181,7 +184,7 @@ body {
   max-width: 85%;
 }
 
-.openhours-content > .header2 {
+.openhours-content .main-header {
   margin: 0 0 1rem 0;
 }
 
@@ -209,7 +212,7 @@ body {
   object-fit: cover;
 }
 
-.contact-data > .header2 {
+.contact-data .main-header {
   margin: 0 0 1rem 0;
 }
 
@@ -224,6 +227,7 @@ body {
   flex-direction: column;
   gap: 0.75rem;
 }
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -241,6 +245,7 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
+
 .copyright {
   color: var(--secondary-text-color);
   margin-top: 1rem;
@@ -248,16 +253,19 @@ body {
 
 /* MEDIA QUERIES ------------------------------------- */
 /* Tablets */
+
 @media screen and (min-width: 600px) {
-  .abutton-positiv,
-  .abutton-negativ {
+  .button-positiv,
+  .button-negativ {
     padding: 1.2rem 2.5rem;
   }
+
   .navigation,
   .navigation-foot {
     gap: 2rem;
     font-size: 1rem;
   }
+
   .navigation-foot {
     height: 1rem;
   }
@@ -274,18 +282,21 @@ body {
   .herolink {
     padding: 1.2rem 2.5rem;
   }
-  .weare {
+
+  .we-are {
     font-size: 1rem;
   }
 
   .openhours {
     margin: 4rem 0;
   }
+
   .contact-innercontainer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
+
   .contact-pic {
     width: 60%;
   }
@@ -295,12 +306,14 @@ body {
     padding: 3rem 0;
     gap: 3rem;
   }
+
   .navigation-foot {
     flex-direction: row;
   }
 }
 
 /* Normal Computer */
+
 @media screen and (min-width: 1000px) {
   .navigation {
     gap: 4rem;
@@ -311,7 +324,7 @@ body {
     line-height: 6.5rem;
   }
 
-  .header2 {
+  .main-header {
     font-size: 2rem;
   }
 
@@ -325,11 +338,13 @@ body {
   .about-pics-double {
     gap: 1rem;
   }
+
   .openhours-wrapper {
     margin: 8rem 0;
     padding: 6rem 0;
   }
-  .content > .header2 {
+
+  .content .main-header {
     margin-bottom: 2rem;
   }
 
@@ -343,7 +358,7 @@ body {
     width: 50%;
   }
 
-  .contact-data > .header2 {
+  .contact-data .main-header {
     margin-bottom: 2rem;
   }
 
@@ -355,9 +370,11 @@ body {
   .contact-menu {
     flex-direction: row;
   }
+
   .footer {
     margin-top: 6rem;
   }
+
   .navigation-foot {
     gap: 4rem;
   }
